@@ -1,0 +1,29 @@
+h1 {
+    color: #2f4f4f;
+    margin-bottom: 10px;
+}
+
+.nav {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+/* list items */
+.nav li {
+    display: inline-block;
+}
+
+/* anchor tags within list items */
+.nav a {
+    /* specificity is (0,1,1) */
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.nav .featured {
+    /* specificity is (0,2,0) */
+    background-color: orange;
+}
