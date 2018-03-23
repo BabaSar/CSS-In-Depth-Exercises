@@ -1,0 +1,31 @@
+
+body {
+    font-size: 16px;
+}
+
+.padded {
+    font-size: 16px;
+    padding: 1em;
+    /* padding of 1em results in a computed value of 16px (becase 1x16px = 16px)*/
+}
+
+.box {
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.box-small {
+    font-size: 12px;
+}
+
+.box-large {
+    font-size: 18px;
+}
+
+.slogan {
+    font-size: 1.2em;
+    padding: 1.2em;
+    /* The padding here will be computed based in the local value for em */
+    background-color: #ccc;
+}
