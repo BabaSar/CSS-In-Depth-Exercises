@@ -1,6 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+
 h1 {
     color: #2f4f4f;
     margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.title {
+    font: 32px Helvetica, Arial, sans-serif;
+    /* Omitted shorthand values default to its intial */
 }
 
 .nav {
@@ -17,6 +27,8 @@ h1 {
 /* anchor tags within list items */
 .nav a {
     /* specificity is (0,1,1) */
+    color:white;
+    padding: 5px 15px;
     background-color: #13a4a4;
     padding: 5px;
     border-radius: 5px;
@@ -26,4 +38,42 @@ h1 {
 .nav .featured {
     /* specificity is (0,2,0) */
     background-color: orange;
+    box-shadow: 2px 2px #6f9090;
+}
+
+a:link {
+    color:blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+.footer {
+    color: #666;
+    background-color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: inherit; 
+    /* This will inherit the color from its parent, i.e the footer */
+    
+    color: initial;
+    /* This will hard-reset to its default */
+
+    /* A word of caution. Initial only resets to the initial value of the property, NOT the element. e.g display: initial will always default to inline. */
+
+    text-decoration: underline;
 }
