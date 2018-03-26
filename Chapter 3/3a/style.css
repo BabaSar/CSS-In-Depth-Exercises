@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    /* This takes care of every element, plus each and every psuedo element */
+}
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: #fff;
+    background-color: #0072b0;
+    border-radius: .5em;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    width: 70%;
+    background-color: #fff;
+    border-radius: .5em;
+    /* min-height: 10em; */
+}
+
+.sidebar {
+    display: table-cell;
+    width: 30%;
+    padding: 1.5em;
+    margin-left: 2em;
+    /* Flexbox will sort out if margin/padding exceeds 100% */
+    background-color: #fff;
+    border-radius: .5em;
+}
+
+.button-link {
+    display: block; 
+    /* Block level elements fill the width of the prent */
+}

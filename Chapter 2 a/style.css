@@ -1,0 +1,30 @@
+:root {
+    font-size: 0.75em;
+}
+
+.panel {
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #999;
+}
+
+.panel > h2 {
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 800px) {
+    :root {
+        font-size: 0.875em;
+        background-color: lightblue;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 1em;
+        background-color: lightseagreen;
+    }
+}
+
