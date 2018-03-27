@@ -30,6 +30,7 @@ header {
     display: table-cell;
     width: 30%;
     padding: 1.5em;
+    margin-top: 0;
     margin-left: 2em;
     /* Flexbox will sort out if margin/padding exceeds 100% */
     background-color: #fff;
@@ -47,6 +48,17 @@ header {
     text-transform: uppercase;
 }
 
-.button-link + .button-link {
+/* .button-link + .button-link {
     margin-top: 1.5em;
+} */
+
+.sponsor-link {
+    display: block;
+    color: #0072b0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body * + * {
+    margin-top: 1em;
 }
