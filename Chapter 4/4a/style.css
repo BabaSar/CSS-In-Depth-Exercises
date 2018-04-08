@@ -1,0 +1,32 @@
+root {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    /* This takes care of every element, plus each and every psuedo element */
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+header {
+    padding: 1em 1.5em;
+    color: #fff;
+    background-color: #0072b0;
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+}
+
+.main {
+    padding: 0 1.5em;
+    background-color: #fff;
+    border-radius: .5em;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
